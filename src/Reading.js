@@ -1,3 +1,6 @@
+import "./main.css";
+import "./reading.css";
+
 function Reading() {
 	return (
 		<div className="reading">
@@ -13,12 +16,17 @@ function Reading() {
 				</p>
 			</div>
 			<div className="progress">
-				<p>Coming soon</p>
+				<label htmlFor="">Select a plan</label>
+				<select name="" id="">
+					<option value="option1">Romans</option>
+				</select>
 			</div>
 			<br />
 			<div className="bible-plan">
-			<label htmlFor="plan">Luke 4 - 5</label>
-				<input type="checkbox" name="plan" id="plan"/> 
+				<label className="checkbox-label" htmlFor="plan">
+					<input type="checkbox" name="plan" id="plan" />
+					<span className="label-text">Luke 4 - 5</span>
+				</label>
 				<p className="date">April 24, 2025</p>
 				<br />
 				<p>60 Days Remaining</p>
